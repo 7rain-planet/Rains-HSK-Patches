@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- 掘进机变为中型机械 -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Mech_Tunneler"]/race</xpath>
+		<value>
+			<mechWeightClass Inherit="False">Medium</mechWeightClass>
+		</value>
+	</Operation>
+
+    <!-- 炼狱魔王变为重型机械 -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Mech_Diabolus"]/race</xpath>
+		<value>
+			<mechWeightClass Inherit="False">Heavy</mechWeightClass>
+		</value>
+	</Operation>
+    <!-- 修改轻型机械复活费用 -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="ResurrectLightMech"]/ingredients</xpath>
+		<value>
+			<ingredients Inherit="False">
+				<li>
+					<filter>
+						<categories>
+							<li>Corpses</li>
+						</categories>
+					</filter>
+					<count>1</count>
+				</li>
+				<li>
+					<filter>
+						<categories>
+							<li>SLDBar</li>
+							<li>USLDBar</li>
+						</categories>
+					</filter>
+					<count>25</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>ComponentIndustrial</li>
+						</thingDefs>
+					</filter>
+					<count>1</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Mechanism</li>
+						</thingDefs>
+					</filter>
+					<count>1</count>
+				</li>
+			</ingredients>
+		</value>
+	</Operation>
+    <!-- 修改中型机械复活费用 -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="ResurrectMediumMech"]/ingredients</xpath>
+		<value>
+			<ingredients Inherit="False">
+				<li>
+					<filter>
+						<categories>
+							<li>Corpses</li>
+						</categories>
+					</filter>
+					<count>1</count>
+				</li>
+				<li>
+					<filter>
+						<categories>
+							<li>SLDBar</li>
+							<li>USLDBar</li>
+						</categories>
+					</filter>
+					<count>50</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>ComponentIndustrial</li>
+						</thingDefs>
+					</filter>
+					<count>2</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Mechanism</li>
+						</thingDefs>
+					</filter>
+					<count>2</count>
+				</li>
+			</ingredients>
+		</value>
+	</Operation>
+    <!-- 修改重型机械复活费用 -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="ResurrectHeavyMech"]/ingredients</xpath>
+		<value>
+			<ingredients Inherit="False">
+				<li>
+					<filter>
+						<categories>
+							<li>Corpses</li>
+						</categories>
+					</filter>
+					<count>1</count>
+				</li>
+				<li>
+					<filter>
+						<categories>
+							<li>USLDBar</li>
+						</categories>
+					</filter>
+					<count>100</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>ComponentSpacer</li>
+						</thingDefs>
+					</filter>
+					<count>2</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>AdvMechanism</li>
+						</thingDefs>
+					</filter>
+					<count>2</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Biomatter</li>
+						</thingDefs>
+					</filter>
+					<count>25</count>
+				</li>
+			</ingredients>
+		</value>
+	</Operation>
+    <!-- 修改超重型机械复活费用 -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="ResurrectUltraheavyMech"]/ingredients</xpath>
+		<value>
+			<ingredients Inherit="False">
+				<li>
+					<filter>
+						<categories>
+							<li>Corpses</li>
+						</categories>
+					</filter>
+					<count>1</count>
+				</li>
+				<li>
+					<filter>
+						<categories>
+							<li>USLDBar</li>
+						</categories>
+					</filter>
+					<count>150</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>ComponentUltra</li>
+						</thingDefs>
+					</filter>
+					<count>2</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>AdvMechanism</li>
+						</thingDefs>
+					</filter>
+					<count>2</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Biomatter</li>
+						</thingDefs>
+					</filter>
+					<count>40</count>
+				</li>
+			</ingredients>
+		</value>
+	</Operation>
+
+    <!-- 矩阵耳机补丁 -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_ArrayHeadset"]/costList</xpath>
+		<value>
+			<costList>
+                <Plasteel>25</Plasteel>
+                <ElectronicComponents>3</ElectronicComponents>
+				<Electronics>1</Electronics>
+                <Mechanism>1</Mechanism>
+                <ComponentIndustrial>2</ComponentIndustrial>
+            </costList>
+		</value>
+	</Operation>
+</Patch>

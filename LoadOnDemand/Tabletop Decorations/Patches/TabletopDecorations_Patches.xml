@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	
+	<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Tabletop Decorations</li>
+        </mods>
+		<match Class="PatchOperationSequence">
+
+            <operations>
+                <!-- 电视遥控器补丁 -->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ucp_remote"]/costList</xpath>
+                    <value>
+                        <costList>
+                            <ComponentIndustrial>1</ComponentIndustrial>
+                            <ElectronicComponents>1</ElectronicComponents>
+                            <Plastic>1</Plastic>
+                        </costList>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="ucp_remote"]</xpath>
+                    <value>
+                        <stuffCategories>
+                            <li>Metallic</li>
+                        </stuffCategories>
+                        <costStuffCount>1</costStuffCount>
+                    </value>
+                </li>
+
+				<!-- 收银机补丁 -->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ucp_register"]/costList</xpath>
+                    <value>
+                        <costList>
+							<Glass>2</Glass>
+                            <ComponentIndustrial>1</ComponentIndustrial>
+                            <ElectronicComponents>1</ElectronicComponents>
+                        </costList>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="ucp_register"]</xpath>
+                    <value>
+                        <stuffCategories>
+                            <li>Metallic</li>
+                        </stuffCategories>
+                        <costStuffCount>10</costStuffCount>
+                    </value>
+                </li>
+
+                <!-- 工具箱补丁 -->
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="ucp_toolbox"]</xpath>
+                    <value>
+                        <costList>
+                            <Mechanism>1</Mechanism>
+                        </costList>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ucp_toolbox"]/costStuffCount</xpath>
+                    <value>
+                        <costStuffCount>5</costStuffCount>
+                    </value>
+                </li>
+                <!-- 螺丝刀架补丁 -->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ucp_screwdrivers"]/costList</xpath>
+                    <value>
+                        <costList>
+							<Plasteel>1</Plasteel>
+                        </costList>
+                    </value>
+                </li>
+
+                <!-- 锤子补丁 -->
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="ucp_hammer"]/costList</xpath>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="ucp_hammer"]</xpath>
+                    <value>
+                        <stuffCategories>
+                            <li>Metallic</li>
+                        </stuffCategories>
+                        <costStuffCount>3</costStuffCount>
+                    </value>
+                </li>
+
+                <!-- 卷尺补丁 -->
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="ucp_measure"]/costList</xpath>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="ucp_measure"]</xpath>
+                    <value>
+                        <stuffCategories>
+                            <li>Metallic</li>
+                        </stuffCategories>
+                        <costStuffCount>1</costStuffCount>
+                    </value>
+                </li>
+
+                <!-- 喷雾罐补丁 -->
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="ucp_aerosol"]/costList</xpath>
+                </li>
+
+                 <!-- 台灯补丁 -->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ucp_tablelamp"]/costList</xpath>
+                    <value>
+                        <costList>
+							<Glass>3</Glass>
+                            <ComponentIndustrial>1</ComponentIndustrial>
+                            <ElectronicComponents>1</ElectronicComponents>
+                            <Plasteel>3</Plasteel>
+                        </costList>
+                    </value>
+                </li>
+
+                 <!-- 夹着手枪的台钳补丁 -->
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="ucp_viseautopistol"]/costList</xpath>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="ucp_viseautopistol"]</xpath>
+                    <value>
+                        <stuffCategories>
+                            <li>Metallic</li>
+                        </stuffCategories>
+                        <costStuffCount>45</costStuffCount>
+                    </value>
+                </li>
+
+                 <!-- 弹药（装饰）补丁 -->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ucp_bullets"]/costList</xpath>
+                    <value>
+                        <costList>
+							<CopperBar>3</CopperBar>   
+                        </costList>
+                    </value>
+                </li>
+
+                 <!-- 火钳补丁 -->
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="ucp_tongs"]/costList</xpath>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="ucp_tongs"]</xpath>
+                    <value>
+                        <stuffCategories>
+                            <li>Metallic</li>
+                        </stuffCategories>
+                        <costStuffCount>3</costStuffCount>
+                    </value>
+                </li>
+
+                 <!-- 圆头锤补丁 -->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ucp_ballpeen"]/costList</xpath>
+                    <value>
+                        <costList>
+							<WoodLog>1</WoodLog>   
+                        </costList>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="ucp_ballpeen"]</xpath>
+                    <value>
+                        <stuffCategories>
+                            <li>Metallic</li>
+                        </stuffCategories>
+                        <costStuffCount>3</costStuffCount>
+                    </value>
+                </li>
+
+                 <!-- 扳手补丁 -->
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="ucp_wrench"]/costList</xpath>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="ucp_wrench"]</xpath>
+                    <value>
+                        <stuffCategories>
+                            <li>Metallic</li>
+                        </stuffCategories>
+                        <costStuffCount>3</costStuffCount>
+                    </value>
+                </li>
+
+                 <!-- 机械臂补丁 -->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ucp_roboarm"]/costList</xpath>
+                    <value>
+                        <costList>
+							<ComponentIndustrial>3</ComponentIndustrial>  
+                        </costList>
+                    </value>
+                </li>                                                                        
+			</operations>
+		</match>
+		
+	</Operation>
+
+</Patch>

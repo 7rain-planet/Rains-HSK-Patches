@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Underground Power Conduits</li>
+        </mods>
+		<match Class="PatchOperationSequence">
+            <operations>
+                <!-- 地下电缆补丁 -->
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="PowerConduitInvisible"]/costList</xpath>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="PowerConduitInvisible"]</xpath>
+                    <value>
+                        <costList Inherit="False">
+                            <Wire>1</Wire>
+                        </costList>
+                    </value>
+                </li>
+
+                <!-- 地下防水电缆补丁 -->
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="WaterproofPowerConduitInvisible"]/costList</xpath>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="WaterproofPowerConduitInvisible"]</xpath>
+                    <value>
+                        <costList Inherit="False">
+                            <Wire>1</Wire>
+                        </costList>
+                    </value>
+                </li>
+
+				
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	
+	<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Wall Decorations</li>
+        </mods>
+		<match Class="PatchOperationSequence">
+
+            <operations>
+                <!-- 壁挂厕纸补丁 -->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ucp_toiletpaper"]/costList</xpath>
+                    <value>
+                        <costList>
+                            <Cloth>10</Cloth>
+                        </costList>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="ucp_toiletpaper"]</xpath>
+                    <value>
+                        <stuffCategories>
+                            <li>Stony</li>
+                            <li>Ceramic</li>
+                            <li>Metallic</li>
+                            <li>WoodLogs</li>
+                        </stuffCategories>
+                        <costStuffCount>1</costStuffCount>
+                    </value>
+                </li>
+
+				<!-- 壁镜补丁 -->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ucp_mirror"]/costList</xpath>
+                    <value>
+                        <costList>
+							<Glass>10</Glass>
+                        </costList>
+                    </value>
+                </li>
+
+                <!-- 壁镜(带灯)补丁 -->
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="ucp_mirrorlight"]/costList</xpath>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="ucp_mirrorlight"]</xpath>
+                    <value>
+                        <costList Inherit="False">
+							<Glass>10</Glass>
+                            <ComponentIndustrial>1</ComponentIndustrial>
+                            <ElectronicComponents>1</ElectronicComponents>
+                        </costList>
+                    </value>
+                </li>
+
+                <!-- 出口标志(绿)补丁 -->
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="ucp_exitsigngreen"]/costList</xpath>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="ucp_exitsigngreen"]</xpath>
+                    <value>
+                        <costList Inherit="False">
+							<Glass>10</Glass>
+                            <ComponentIndustrial>1</ComponentIndustrial>
+                            <ElectronicComponents>1</ElectronicComponents>
+                        </costList>
+                    </value>
+                </li>
+
+                <!-- 出口标志(红)补丁 -->
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="ucp_exitsignred"]/costList</xpath>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="ucp_exitsignred"]</xpath>
+                    <value>
+                        <costList Inherit="False">
+							<Glass>10</Glass>
+                            <ComponentIndustrial>1</ComponentIndustrial>
+                            <ElectronicComponents>1</ElectronicComponents>
+                        </costList>
+                    </value>
+                </li>
+
+                <!-- 常青藤叶子补丁 -->
+                <!-- <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ucp_ivyleaves"]/costList</xpath>
+                    <value>
+                        <costList>
+							<Hay>10</Hay>
+                        </costList>
+                    </value>
+                </li> -->
+                <!-- 常青藤叶子(拐角)补丁 -->
+                <!-- <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ucp_ivyleavescorner"]/costList</xpath>
+                    <value>
+                        <costList>
+							<Hay>10</Hay>
+                        </costList>
+                    </value>
+                </li>-->
+
+                <!-- 软木板补丁 -->
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="ucp_corkboard"]/costList</xpath>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="ucp_corkboard"]</xpath>
+                    <value>
+                        <stuffCategories>
+                            <li>Woody</li>
+                        </stuffCategories>
+                        <costStuffCount>1</costStuffCount>
+                    </value>
+                </li>
+
+                 <!-- 墙壁插座补丁 -->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ucp_wallsocket"]/costList</xpath>
+                    <value>
+                        <costList>
+							<Wire>1</Wire>
+                            <Plastic>1</Plastic>
+                        </costList>
+                    </value>
+                </li>
+
+                 <!-- 电灯开关补丁 -->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ucp_wallswitch"]/costList</xpath>
+                    <value>
+                        <costList>
+							<Wire>1</Wire>
+                            <Plastic>1</Plastic>
+                            <ComponentIndustrial>1</ComponentIndustrial>
+                            <ElectronicComponents>1</ElectronicComponents>
+                        </costList>
+                    </value>
+                </li>                
+			</operations>
+		</match>
+		
+	</Operation>
+
+</Patch>

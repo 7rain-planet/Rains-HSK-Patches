@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<loadFolders>
+  <v1.4>
+    <li>/</li>
+    <!-- <li IfModActive="hlx.ReinforcedMechanoids2">LoadOnDemand/Reinforced Mechanoid 2</li> -->
+    <li IfModActive="Pal5k.LogisticsMechanoid">LoadOnDemand/Logistics_Mechanoid</li>
+    <li IfModActive="chv.DiagonalWalls2">LoadOnDemand/Diagonal Walls 2</li>
+    <li IfModActive="Owlchemist.UndergroundPowerConduits">LoadOnDemand/Underground Power Conduits</li>
+    <li IfModActive="ucp.LavaLamps">LoadOnDemand/Lava Lamps</li>
+    <li IfModActive="ucp.TabletopDecorations">LoadOnDemand/Tabletop Decorations</li>
+    <li IfModActive="ucp.WallDecorations">LoadOnDemand/Wall Decorations</li>
+    <li IfModActive="skyarkhangel.HSK">LoadOnDemand/Core_SK</li>
+    <li IfModActive="Ludeon.Rimworld.Biotech">Biotech</li>
+  </v1.4>
+</loadFolders>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Rain's HSK Patches</name>
+	<author>警觉调整者</author>
+	<supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+	<packageId>Rains.HSK.Patches</packageId>
+	<description>一些mod的HSK补丁,目前包括:2x3桌子修改为2x4以适配文化dlc,LavaLamps(熔岩灯),TabletopDecorations(桌面装饰),WallDecorations(壁挂装饰),UndergroundPowerConduits(地下电缆)</description>
+	<loadAfter>
+		<li>skyarkhangel.HSK</li>
+	</loadAfter>
+</ModMetaData>

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- Heavy Mech Gestation Recipe Patches -->
+	<Operation Class="PatchOperationFindMod">
+    <mods>
+		<li>Logistics_Mechanoid</li>
+    </mods>
+		<match Class="PatchOperationSequence">
+		 <operations>
+        <li Class="PatchOperationReplace">
+			<xpath>Defs/RecipeDef[defName="Logistic"]/ingredients</xpath>
+			<value>
+				<ingredients Inherit="False">
+				<li>
+					<filter>
+						<categories>
+							<li>SLDBar</li>
+							<li>USLDBar</li>
+						</categories>
+					</filter>
+					<count>105</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Electronics</li>
+						</thingDefs>
+					</filter>
+					<count>2</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>ComponentIndustrial</li>
+						</thingDefs>
+					</filter>
+					<count>4</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Mechanism</li>
+						</thingDefs>
+					</filter>
+					<count>2</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>SubcoreRegular</li>
+						</thingDefs>
+					</filter>
+					<count>1</count>
+				</li>
+			</ingredients>
+			</value>
+		</li>
+      </operations>
+    </match>
+  </Operation>
+
+</Patch>
