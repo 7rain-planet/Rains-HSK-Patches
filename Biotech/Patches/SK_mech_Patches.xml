@@ -208,4 +208,20 @@
             </costList>
 		</value>
 	</Operation>
+
+    <!-- 机械体技能等级补丁 -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef
+			[
+				defName="Mech_Constructoid" or
+				defName="Mech_Fabricor" or
+				defName="Mech_Agrihand" or
+				defName="Mech_Paramedic"
+			]
+			/race
+		</xpath>
+		<value>
+			<mechFixedSkillLevel Inherit="False">15</mechFixedSkillLevel>
+		</value>
+	</Operation>
 </Patch>

@@ -3,6 +3,7 @@
   <v1.4>
     <li>/</li>
     <!-- <li IfModActive="hlx.ReinforcedMechanoids2">LoadOnDemand/Reinforced Mechanoid 2</li> -->
+    <li IfModActive="LWM.DeepStorage">LoadOnDemand/LWM's Deep Storage</li>
     <li IfModActive="Pal5k.LogisticsMechanoid">LoadOnDemand/Logistics_Mechanoid</li>
     <li IfModActive="chv.DiagonalWalls2">LoadOnDemand/Diagonal Walls 2</li>
     <li IfModActive="Owlchemist.UndergroundPowerConduits">LoadOnDemand/Underground Power Conduits</li>
