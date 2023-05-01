@@ -45,14 +45,14 @@
 
                 <!-- 储物筐补丁 -->
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="LWM_Food_Basket"]/costStuffCount</xpath>
+                    <xpath>Defs/ThingDef[defName="LWM_FabricHamper"]/costStuffCount</xpath>
                     <value>
                         <costStuffCount>50</costStuffCount>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="LWM_Food_Basket"]/costList</xpath>
+                    <xpath>Defs/ThingDef[defName="LWM_FabricHamper"]/costList</xpath>
                     <value>
                         <costList Inherit="False">
                             <Plasteel>20</Plasteel>
