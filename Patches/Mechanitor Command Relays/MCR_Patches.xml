@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	
+	<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Mechanitor Command Relays</li>
+        </mods>
+		<match Class="PatchOperationSequence">
+
+            <operations>
+                <!-- 指挥中继器补丁 -->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Hydroxyapatite_CommandRelay"]/costList</xpath>
+                    <value>
+                        <costList>
+                            <ComponentSpacer>4</ComponentSpacer>
+                            <AdvMechanism>2</AdvMechanism>
+                            <Microchips>1</Microchips>
+                            <ElectronicComponents>10</ElectronicComponents>
+                            <Rubber>35</Rubber>
+                            <Plastic>15</Plastic>
+                        </costList>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="Hydroxyapatite_CommandRelay"]</xpath>
+                    <value>
+                        <stuffCategories>
+                            <li>Metallic</li>
+                            <!-- <li>USLDBar</li> -->
+                        </stuffCategories>
+                        <costStuffCount>100</costStuffCount>
+                    </value>
+                </li>
+
+			</operations>
+		</match>
+		
+	</Operation>
+
+</Patch>
