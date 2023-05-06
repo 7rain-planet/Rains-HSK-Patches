@@ -254,6 +254,53 @@
                     </value>
                 </li>
 
+                <!--熔岩发电机补丁-->
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BMT_LavaGenerator"]</xpath>
+                    <value>
+                        <stuffCategories>
+                            <li>RuggedMetallic</li>
+                        </stuffCategories>
+                        <costStuffCount>270</costStuffCount>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BMT_LavaGenerator"]/costList</xpath>
+                    <value>
+                    <costList Inherit="False">
+                        <ReinforcedConcrete>30</ReinforcedConcrete>
+                        <Rubber>20</Rubber>
+                        <Electronics>1</Electronics>
+                        <Mechanism>6</Mechanism>
+                        <ComponentIndustrial>8</ComponentIndustrial>
+                        <ComponentSpacer>2</ComponentSpacer>
+                    </costList>
+                    </value>
+                </li>
+
+                <!--地下运输舱补丁-->
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BMT_DrillPod"]</xpath>
+                    <value>
+                        <stuffCategories>
+                            <li>RuggedMetallic</li>
+                        </stuffCategories>
+                        <costStuffCount>60</costStuffCount>
+                    </value>
+                </li>   
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BMT_DrillPod"]/costList</xpath>
+                    <value>
+                    <costList Inherit="False">
+                        <Glass>15</Glass>
+                        <Plastic>15</Plastic>
+                        <ComponentIndustrial>5</ComponentIndustrial>
+                    </costList>
+                    </value>
+                </li>
+
                 <!-- 精致真菌木地板的补丁 -->
                 <li Class="PatchOperationFindMod">
                     <mods>
@@ -271,10 +318,7 @@
                             </li>
                         </operations>
                     </match>
-                </li>
-
-
-             
+                </li>  
 			</operations>
 		</match>
 	</Operation>
