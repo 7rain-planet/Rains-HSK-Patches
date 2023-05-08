@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	
+	<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Biomes! Caverns</li>
+        </mods>
+		<match Class="PatchOperationSequence">
+
+            <operations>
+
+                <!--几种蝾螈的补丁-->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BMT_DarkAxolotl"]/race/useMeatFrom</xpath>
+                    <value>
+                    <useMeatFrom>Elephant</useMeatFrom>
+                    </value>
+                </li>
+ 
+                 <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BMT_FireSalamander"]/race/useMeatFrom</xpath>
+                    <value>
+                    <useMeatFrom>Elephant</useMeatFrom>
+                    </value>
+                </li>
+
+                 <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BMT_Maxolotl"]/race</xpath>
+                    <value>
+                    <useMeatFrom>Elephant</useMeatFrom>
+                    </value>
+                </li>
+
+                <!--蟾蜍的补丁-->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BMT_Goeto"]/race/useMeatFrom</xpath>
+                    <value>
+                    <useMeatFrom>Elephant</useMeatFrom>
+                    </value>
+                </li>
+
+                <!--truffle mole的补丁-->
+                 <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BMT_TruffleMole"]/race</xpath>
+                    <value>
+                    <useMeatFrom>Elephant</useMeatFrom>
+                    </value>
+                </li>
+
+                <!--xyrion的补丁-->
+                 <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BMT_Xyrion"]/race</xpath>
+                    <value>
+                    <useMeatFrom>Muffalo</useMeatFrom>
+                    </value>
+                </li>
+
+                <!--GlowSnail的补丁-->
+                 <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BMT_GlowSnail"]/race</xpath>
+                    <value>
+                    <useMeatFrom>Elephant</useMeatFrom>
+                    </value>
+                </li>
+
+                <!--Yooka的补丁-->
+                 <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BMT_Yooka"]/race</xpath>
+                    <value>
+                    <useMeatFrom>Elephant</useMeatFrom>
+                    </value>
+                </li>
+
+                <!--小狐狸的补丁-->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BMT_MossyFennec"]/race/useMeatFrom</xpath>
+                    <value>
+                    <useMeatFrom>Muffalo</useMeatFrom>
+                    </value>
+                </li>
+
+                <!--chem snail的补丁-->
+                 <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BMT_ChemSnail"]/race</xpath>
+                    <value>
+                    <useMeatFrom>Elephant</useMeatFrom>
+                    </value>
+                </li>
+
+                <!--兔子的补丁-->
+                 <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BMT_SonarRabbit"]/race</xpath>
+                    <value>
+                    <useMeatFrom>Elephant</useMeatFrom>
+                    </value>
+                </li>
+
+                <!--GiantSnail的补丁-->
+                 <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BMT_GiantSnail"]/race</xpath>
+                    <value>
+                    <useMeatFrom>Elephant</useMeatFrom>
+                    </value>
+                </li>
+
+                <!--BMT_GiantSlug的补丁-->
+                 <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BMT_GiantSlug"]/race</xpath>
+                    <value>
+                    <useMeatFrom>Elephant</useMeatFrom>
+                    </value>
+                </li>
+
+                <!--水晶爆炸羊的补丁-->
+                 <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BMT_Crystalope"]/race</xpath>
+                    <value>
+                    <useMeatFrom>Elephant</useMeatFrom>
+                    </value>
+                </li>
+
+                <!--水晶鼹鼠的补丁-->
+                 <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BMT_CrystalFairyMole"]/race</xpath>
+                    <value>
+                    <useMeatFrom>Elephant</useMeatFrom>
+                    </value>
+                </li>
+
+                <!--发光蛞蝓的补丁-->
+                 <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BMT_GlowSlug"]/race</xpath>
+                    <value>
+                    <useMeatFrom>Elephant</useMeatFrom>
+                    </value>
+                </li>
+
+                <!--BMT_MagmaLizard的补丁-->
+                 <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BMT_MagmaLizard"]/race</xpath>
+                    <value>
+                    <useMeatFrom>Muffalo</useMeatFrom>
+                    </value>
+                </li>
+
+                <!--六足蛇怪的补丁-->
+                 <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BMT_Basilisk"]/race</xpath>
+                    <value>
+                    <useMeatFrom>Muffalo</useMeatFrom>
+                    </value>
+                </li>
+
+                <!--BMT_MetalloSnail的补丁-->
+                 <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BMT_MetalloSnail"]/race</xpath>
+                    <value>
+                    <useMeatFrom>Elephant</useMeatFrom>
+                    </value>
+                </li>
+
+                <!--巨型蝙蝠的补丁-->
+                 <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BMT_Megabat"]/race</xpath>
+                    <value>
+                    <useMeatFrom>Elephant</useMeatFrom>
+                    </value>
+                </li>
+
+                <!--BMT_Owlbear的补丁-->
+                 <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BMT_Owlbear"]/race</xpath>
+                    <value>
+                    <useMeatFrom>Muffalo</useMeatFrom>
+                    </value>
+                </li>
+
+                <!--几种水晶蟹的补丁-->
+                 <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BMT_CrystalCrab_Slate"]</xpath>
+                    <value>
+                        <race>
+                            <useMeatFrom>Elephant</useMeatFrom>
+                        </race>
+                    </value>
+                </li>
+
+                 <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BMT_CrystalCrab_Limestone"]</xpath>
+                    <value>
+                        <race>
+                            <useMeatFrom>Elephant</useMeatFrom>
+                        </race>
+                    </value>
+                </li>
+
+                 <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BMT_CrystalCrab_Sandstone"]</xpath>
+                    <value>
+                        <race>
+                            <useMeatFrom>Elephant</useMeatFrom>
+                        </race>
+                    </value>
+                </li>
+
+                 <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BMT_CrystalCrab_Granite"]</xpath>
+                    <value>
+                        <race>
+                            <useMeatFrom>Elephant</useMeatFrom>
+                        </race>
+                    </value>
+                </li>
+
+                 <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BMT_CrystalCrab_Jade"]</xpath>
+                    <value>
+                        <race>
+                            <useMeatFrom>Elephant</useMeatFrom>
+                        </race>
+                    </value>
+                </li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>
