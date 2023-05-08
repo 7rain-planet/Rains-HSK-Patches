@@ -221,6 +221,70 @@
                         </race>
                     </value>
                 </li>
+
+                <!--酸蛞蝓的补丁-->
+                 <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BMT_AcidSlug"]/race</xpath>
+                    <value>
+                            <useMeatFrom>Muffalo</useMeatFrom>
+                    </value>
+                </li>
+
+                <!--BMT_Thrumbungus的补丁-->
+                 <!-- <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BMT_Thrumbungus"]/race</xpath>
+                    <value>
+                            <useMeatFrom>Muffalo</useMeatFrom>
+                    </value>
+                </li> -->
+
+                <!--BMT_CaveSpider的补丁-->
+                 <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BMT_CaveSpider"]/race</xpath>
+                    <value>
+                            <useMeatFrom>Megaspider</useMeatFrom>
+                    </value>
+                </li>
+
+                <!--BMT_WoolySpider的补丁-->
+                 <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BMT_WoolySpider"]/race</xpath>
+                    <value>
+                            <useMeatFrom>Megaspider</useMeatFrom>
+                    </value>
+                </li>
+
+                <!--BMT_FungalFerret的补丁-->
+                 <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BMT_FungalFerret"]/race</xpath>
+                    <value>
+                            <useMeatFrom>Muffalo</useMeatFrom>
+                    </value>
+                </li>
+
+                <!--BMT_FungalWeevil的补丁-->
+                 <!-- <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BMT_FungalWeevil"]/race</xpath>
+                    <value>
+                            <useMeatFrom>Megaspider</useMeatFrom>
+                    </value>
+                </li> -->
+
+
+                <!--几种飞行蝙蝠的补丁-->
+                 <!-- <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BMT_BrownBat"]/race</xpath>
+                    <value>
+                            <useMeatFrom>Elephant</useMeatFrom>
+                    </value>
+                </li>
+
+                 <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BMT_GlowBat"]/race</xpath>
+                    <value>
+                            <useMeatFrom>Elephant</useMeatFrom>
+                    </value>
+                </li> -->
 			</operations>
 		</match>
 	</Operation>
