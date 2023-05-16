@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	
+	<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Biomes! Caverns</li>
+        </mods>
+		<match Class="PatchOperationSequence">
+
+            <operations>
+
+                <!--植物产出类别的补丁-->
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BMT_AbyssalGrapes"]</xpath>
+                    <value>
+                    	<thingCategories>
+			                <li>FruitFoodRaw</li>
+		                </thingCategories>
+                    </value>
+                </li>
+ 
+                 <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BMT_RawDulcis"]</xpath>
+                    <value>
+                    	<thingCategories>
+			                <li>FruitFoodRaw</li>
+		                </thingCategories>
+                    </value>
+                </li>
+
+                 <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BMT_RawShimmershroom"]</xpath>
+                    <value>
+                    	<thingCategories>
+                            <li>FungusPlantRaw</li>
+                        </thingCategories>
+                    </value>
+                </li>
+
+                 <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BMT_Glimmerslime"]</xpath>
+                    <value>
+                    	<thingCategories>
+			                <li>FruitFoodRaw</li>
+		                </thingCategories>
+                    </value>
+                </li>
+
+                 <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BMT_RawGlowbulb"]</xpath>
+                    <value>
+                    	<thingCategories>
+                            <li>FungusPlantRaw</li>
+                        </thingCategories>
+                    </value>
+                </li>
+
+                 <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BMT_RawGreyfields"]</xpath>
+                    <value>
+                    	<thingCategories>
+                            <li>FungusPlantRaw</li>
+                        </thingCategories>
+                    </value>
+                </li>
+
+                 <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BMT_RawRoyalBracket"]</xpath>
+                    <value>
+                    	<thingCategories>
+                            <li>FungusPlantRaw</li>
+                        </thingCategories>
+                    </value>
+                </li>
+
+                 <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BMT_Starchstalk"]</xpath>
+                    <value>
+                    	<thingCategories>
+			                <li>FruitFoodRaw</li>
+		                </thingCategories>
+                    </value>
+                </li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>
